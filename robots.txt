@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /documentation/
+Disallow: /tools/
+Sitemap: https://ul-flugbuch.com/sitemap.xml
