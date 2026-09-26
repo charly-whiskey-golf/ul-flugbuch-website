@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta name="apple-itunes-app" content="app-id=6751782553">
+  <title>QuickFlight per NFC – UL Flugbuch</title>
+  <meta name="description" content="Starte einen QuickFlight für deine Maschine mit einem NFC-Aufkleber und UL Flugbuch.">
+  <link rel="icon" href="../images/logo-footer.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>#open-app[hidden] { display: none; }</style>
+  <script src="../js/navigation.js" defer></script>
+  <script src="nfc.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header wrap">
+  <a class="brand" href="../index.html" aria-label="UL Flugbuch – Startseite"><img src="../images/logo.png" width="455" height="455" alt="UL Flugbuch"></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" hidden>Menü <span aria-hidden="true">☰</span></button>
+  <nav id="main-navigation" aria-label="Hauptnavigation"><a href="../index.html">UL Flugbuch</a><a href="../faq/index.html">FAQ</a><a href="../download/index.html">Download</a><a href="../impressum/index.html">Impressum</a><a href="../datenschutz/index.html">Datenschutz</a></nav>
+</header>
+<main id="main" tabindex="-1">
+  <section class="download wrap">
+    <img class="download-logo" src="../images/logo.png" width="455" height="455" alt="UL Flugbuch">
+    <h1>QuickFlight per NFC</h1>
+    <p class="lead" id="aircraft" aria-live="polite">Ein Aufkleber für deine Maschine.</p>
+    <p id="link-status">Mit einer NFC-fähigen Version von UL Flugbuch kannst du hier einen QuickFlight öffnen.</p>
+    <div class="store-links">
+      <a class="button" id="open-app" hidden>In der iPhone-App öffnen</a>
+      <a class="button" href="../download/">UL Flugbuch herunterladen</a>
+    </div>
+    <noscript><p>Öffne UL Flugbuch auf deinem iPhone und nutze im Flugbuch den Knopf „NFC-Aufkleber lesen“. Für die Anzeige der Maschine auf dieser Seite wird JavaScript benötigt.</p></noscript>
+    <h2>So funktioniert es</h2>
+    <p>Halte das iPhone an den eingerichteten Aufkleber, tippe auf die Mitteilung und entsperre es bei Bedarf. Die App erkennt das Kennzeichen. Ist die Maschine noch nicht in deinem Flugbuch, kannst du sie dort einmalig anlegen.</p>
+    <p>QuickFlight beginnt die Blockzeit. Die GPS-Aufzeichnung folgt deinen Einstellungen. Ein bereits laufender Flug wird durch erneutes Scannen nicht ersetzt oder beendet.</p>
+    <h2>Es öffnet sich nur diese Seite?</h2>
+    <p>Die NFC-Funktion benötigt eine entsprechend aktualisierte iPhone-App. Sie wird zunächst in der Entwicklungsversion 3.5.0 erprobt und ist in älteren App-Versionen noch nicht enthalten. Nutze in einer geeigneten Version alternativ den Knopf „NFC-Aufkleber lesen“ im Flugbuch.</p>
+    <p>Automatisches NFC-Lesen funktioniert nicht im Flugmodus. Du kannst den Flug weiterhin mit dem normalen Startknopf beginnen.</p>
+    <h2>Eine Maschine, mehrere Piloten</h2>
+    <p>Der Aufkleber enthält Kennzeichen und Lizenzart. Jeder Pilot führt seinen Flug im eigenen Flugbuch. Das gemeinsame Tag-Format ist auch für eine spätere Android-Unterstützung vorgesehen. Die Apple Watch kann diesen Aufkleber nicht selbst lesen.</p>
+  </section>
+</main>
+<footer class="site-footer"><div class="wrap footer-inner">
+  <a href="../index.html" aria-label="UL Flugbuch – Startseite"><img src="../images/logo-footer.png" width="256" height="256" alt="UL Flugbuch" loading="lazy"></a>
+  <div><p>© Sebastian Reich. Alle Rechte vorbehalten.</p><nav aria-label="Rechtliche Informationen"><a href="../impressum/index.html">Impressum</a><a href="../datenschutz/index.html">Datenschutz Website</a><a href="../datenschutz-app/index.html">Datenschutz Apple-App</a></nav></div>
+</div></footer>
+</body>
+</html>
