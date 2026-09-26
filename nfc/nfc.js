@@ -25,7 +25,7 @@
 
   document.getElementById("aircraft").textContent = registration + " · " + categories.get(category);
   document.getElementById("link-status").textContent =
-    "Öffne die Maschine in deiner iPhone-App. Ein Start über diesen Button wird dort noch einmal bestätigt.";
+    "Öffne die Maschine in deiner iPhone-App. Start oder Stopp über diesen Button werden dort noch einmal bestätigt.";
   const query = new URLSearchParams({ v: "1", reg: registration, cat: category });
   const button = document.getElementById("open-app");
   button.href = "ulflugbuch://nfc/?" + query.toString();
