@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["BNMM9Z4LAV.de.sreich.ULFlugbuch"],
+        "components": [
+          { "/": "/nfc/" }
+        ]
+      }
+    ]
+  }
+}
