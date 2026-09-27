@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "de.sebastianreich.ulflugbuch",
+      "sha256_cert_fingerprints": [
+        "E1:77:5C:A0:CD:E8:3B:7B:04:5D:21:7F:3C:C6:A9:61:18:FA:0E:98:C3:2A:D8:18:4F:BB:3A:E3:16:F4:FA:23"
+      ]
+    }
+  }
+]
