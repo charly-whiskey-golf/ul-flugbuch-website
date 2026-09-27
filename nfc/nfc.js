@@ -33,7 +33,7 @@
   document.getElementById("aircraft").textContent =
     [registration, aircraftType, categories.get(category)].filter(Boolean).join(" · ");
   document.getElementById("link-status").textContent =
-    "Öffne die Maschine in deiner App. Start oder Stopp über diesen Button werden dort noch einmal bestätigt.";
+    "Öffne diese Maschine in UL Flugbuch.";
   const query = new URLSearchParams({ v: version, reg: registration, cat: category });
   if (version === "2") query.set("type", aircraftType);
   const button = document.getElementById("open-app");
