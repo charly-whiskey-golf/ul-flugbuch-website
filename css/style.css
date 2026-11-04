@@ -34,9 +34,18 @@ p { margin: 0 0 1.15rem; }
 .feature { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(36px,7vw,100px); padding-block: 72px; }
 .feature.reverse .screenshot { order: 2; }
 .screenshot { display: flex; justify-content: center; }
-.screenshot a { display: block; width: min(100%,320px); border-radius: 38px; }
-.screenshot img { border-radius: 38px; }
+.screenshot a { display: block; width: min(100%,320px); }
+/* A responsive device frame keeps the original app pixels intact. */
+.iphone { position: relative; padding: 7px; border: 2px solid #626773; border-radius: 48px; background: #101114; box-shadow: inset 0 0 0 2px #24262c, 0 20px 48px #0008; isolation: isolate; }
+.iphone::after { content: ""; position: absolute; z-index: 1; top: 2.05%; left: 35.5%; width: 29%; height: 3.5%; border-radius: 999px; background: #050506; box-shadow: inset 0 0 0 1px #202126; pointer-events: none; }
+.iphone img { width: 100%; border-radius: 38px; }
+.iphone:hover { border-color: #a0b4d6; }
 .feature-copy p { font-size: 1.14rem; color: var(--muted); }
+.eyebrow, .feature-copy .eyebrow { color: #a9c6f0; font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 14px; }
+.download-cta { padding-bottom: 88px; text-align: center; }
+.download-cta-inner { padding: clamp(32px,6vw,64px) clamp(20px,4vw,48px); border: 1px solid #364764; border-radius: 24px; background: radial-gradient(ellipse at top, #203457 0%, #101725 65%, #0c0e14 100%); }
+.download-cta h2 { max-width: 700px; margin-inline: auto; }
+.download-cta-inner > p:not(.eyebrow) { color: var(--muted); margin-bottom: 28px; }
 .features { padding-block: 72px 100px; }
 .features > h2 { text-align: center; margin-bottom: 48px; }
 .feature-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
@@ -80,6 +89,7 @@ p { margin: 0 0 1.15rem; }
  .feature-copy { text-align: center; }
  .feature-grid { grid-template-columns: 1fr; }
  .features { padding-block: 48px 64px; }
+ .download-cta { padding-bottom: 56px; }
  .footer-inner { flex-wrap: wrap; align-items: flex-start; gap: 20px; }
  .footer-inner > div { flex: 1 1 210px; }
  .back-top { margin-left: 0; }
